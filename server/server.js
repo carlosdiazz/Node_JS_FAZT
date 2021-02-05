@@ -1,15 +1,18 @@
+const { Socket } = require('dgram');
 const net = require('net');
-
 const server = net.createServer();
+const readline=require('readline-sync')
+
 
 server.on('connection', (socket)=>{
     socket.on('data', (data)=>{
-        console.log('Mensaje Recibido desde el cliente: '+ data)
-        socket.write('Recibido')
+        console.log('Mensaje: '+ data)
+        var line = readline.question('\nDigite su respuesta:\t')
+        socket.write(line)
     });
 
     socket.on('close',()=>{
-        console.log('Comunicacion finalizo ')
+        console.log('La comunicacion finalizo ')
     });
 
     socket.on('error',(err)=>{
