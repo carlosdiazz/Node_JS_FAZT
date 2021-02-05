@@ -2,6 +2,7 @@ const math =require('./math.js');
 const os = require('os');
 const fs = require('fs');
 const http = require('http');
+const colors = require('colors')
 
 
 const handleServer = function(req, res){
@@ -13,7 +14,7 @@ const handleServer = function(req, res){
 const server = http.createServer(handleServer);
 
 server.listen(3000, function(){
-    console.log('Server on port 3000');
+    console.log('Server on port 3000'.green);
 });
 
 //Aqui tengo metodo tradicional para crear un Server

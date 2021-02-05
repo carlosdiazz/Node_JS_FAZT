@@ -1,0 +1,22 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosdiazz/Node_JS_FAZT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosdiazz/Node_JS_FAZT/issues"
+  },
+  "homepage": "https://github.com/carlosdiazz/Node_JS_FAZT#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
